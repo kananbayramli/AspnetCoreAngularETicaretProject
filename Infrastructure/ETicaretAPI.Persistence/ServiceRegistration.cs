@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Persistence
 {
-    public static class ServiceRegistration
+    public static class ServiceRegistrationU
     {
         public static void AddPersistenceServices(this IServiceCollection services) 
         {
