@@ -1,12 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Core",
-    "\\Core\\ETicaretAPI.Application",
-    "\\Infrastructure",
-    "\\Infrastructure\\ETicaretAPI.Persistence",
-    "\\Infrastructure\\ETicaretAPI.Persistence\\Contexts"
+    ""
   ],
-  "SelectedNode": "\\Core\\ETicaretAPI.Application\\obj",
   "PreviewInSolutionExplorer": false
 }

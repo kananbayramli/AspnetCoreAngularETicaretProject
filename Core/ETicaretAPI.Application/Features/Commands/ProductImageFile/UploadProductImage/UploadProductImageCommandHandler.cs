@@ -26,8 +26,10 @@ namespace ETicaretAPI.Application.Features.Commands.ProductImageFile.UploadProdu
         {
             List<(string fileName, string pathOrContainerName)> result = await _storageService.UploadAsync("photo-images", request.Files);
 
- 
+
             Domain.Entities.Product product = await _productReadRepository.GetByIdAsync(request.Id);
+
+
             await _productImageFileWriteRepository.AddRangeAsync(result.Select(r => new Domain.Entities.ProductImageFile
             {
                 FileName = r.fileName,
@@ -37,6 +39,7 @@ namespace ETicaretAPI.Application.Features.Commands.ProductImageFile.UploadProdu
             }).ToList());
 
             await _productImageFileWriteRepository.SaveAsync();
+
             return new();
         }
     }

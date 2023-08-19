@@ -2,7 +2,11 @@
 
 namespace ETicaretAPI.Infrastructure.Services
 {
-    public class FileService
+    public class FileService 
     {
+   
+       
+
+        
     }
 }

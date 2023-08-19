@@ -9,7 +9,7 @@ namespace ETicaretAPI.Application.Exceptions
 {
     public class UserCreateFailedException : Exception
     {
-        public UserCreateFailedException() : base("We have some problems with creating User :(")
+        public UserCreateFailedException() : base("Kullanıcı oluşturulurken beklenmeyen bir hatayla karşılaşıldı!")
         {
         }
 

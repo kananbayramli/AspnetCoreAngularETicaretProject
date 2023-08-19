@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace ETicaretAPI.Infrastructure.Operations
 {
     public static class NameOperation
@@ -20,7 +22,6 @@ namespace ETicaretAPI.Infrastructure.Operations
                 .Replace("=", "")
                 .Replace("?", "")
                 .Replace("_", "")
-                .Replace("", "")
                 .Replace(" ", "-")
                 .Replace("@", "")
                 .Replace("€", "")
@@ -44,5 +45,10 @@ namespace ETicaretAPI.Infrastructure.Operations
                 .Replace("î", "i")
                 .Replace("ş", "s")
                 .Replace("Ş", "s")
-                .Replace("Ç", "c");
-}   }
+                .Replace("Ç", "c")
+                .Replace("ç", "c")
+                .Replace("<", "")
+                .Replace(">", "")
+                .Replace("|", "");
+    }
+}

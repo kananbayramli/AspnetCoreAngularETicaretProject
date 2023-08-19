@@ -40,8 +40,10 @@ namespace ETicaretAPI.Infrastructure.Services.Storage
                                 break;
                             }
                         }
+
                         int indexNo2 = newFileName.IndexOf(".");
                         string fileNo = newFileName.Substring(indexNo1 + 1, indexNo2 - indexNo1 - 1);
+
                         if (int.TryParse(fileNo, out int _fileNo))
                         {
                             _fileNo++;
@@ -50,8 +52,10 @@ namespace ETicaretAPI.Infrastructure.Services.Storage
                         }
                         else
                             newFileName = $"{Path.GetFileNameWithoutExtension(newFileName)}-2{extension}";
+
                     }
                 }
+
                 //if (File.Exists($"{path}\\{newFileName}"))
                 if (hasFileMethod(pathOrContainerName, newFileName))
                     return await FileRenameAsync(pathOrContainerName, newFileName, hasFileMethod, false);
