@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qtbCzpDXrEyunmqpMW10251gVvuwRxlWp5xMKtp6pig=",
+  "Hash": "JsmRf5yRbr1JaoR5raeZrW9G8dVQxWlpq7RNCPQ3IiA=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\K\\Desktop\\ETicaretApplication\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\edit.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\K\\Desktop\\ETicaretApplication\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "photo-images/edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photo-images\\edit.png"
+    }
+  ]
 }

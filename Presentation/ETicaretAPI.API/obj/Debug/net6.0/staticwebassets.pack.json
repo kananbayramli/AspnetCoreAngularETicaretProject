@@ -1,16 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\K\\Desktop\\ETicaretApplication\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\4576090photographypicturessocial-mediaviewpresentationicon-1.png",
-      "PackagePath": "staticwebassets\\photo-images\\4576090photographypicturessocial-mediaviewpresentationicon-1.png"
-    },
-    {
-      "Id": "C:\\Users\\K\\Desktop\\ETicaretApplication\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\confused-removebg-preview-1.png",
-      "PackagePath": "staticwebassets\\photo-images\\confused-removebg-preview-1.png"
-    },
-    {
-      "Id": "C:\\Users\\K\\Desktop\\ETicaretApplication\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\confused-removebg-preview-4.png",
-      "PackagePath": "staticwebassets\\photo-images\\confused-removebg-preview-4.png"
+      "Id": "C:\\Users\\K\\Desktop\\ETicaretApplication\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\photo-images\\edit.png",
+      "PackagePath": "staticwebassets\\photo-images\\edit.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",

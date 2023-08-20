@@ -44,23 +44,23 @@ namespace ETicaretAPI.Infrastructure.Services
         public async Task SendPasswordResetMailAsync(string to, string userId, string resetToken)
         {
             StringBuilder mail = new();
-            mail.AppendLine("Merhaba<br>Eğer yeni şifre talebinde bulunduysanız aşağıdaki linkten şifrenizi yenileyebilirsiniz.<br><strong><a target=\"_blank\" href=\"");
+            mail.AppendLine("Salam<br>Eger yeni şifre telebiniz varsa aşağıdaki linkten şifrenizi yenileye bilersiniz.<br><strong><a target=\"_blank\" href=\"");
             mail.AppendLine(_configuration["AngularClientUrl"]);
             mail.AppendLine("/update-password/");
             mail.AppendLine(userId);
             mail.AppendLine("/");
             mail.AppendLine(resetToken);
-            mail.AppendLine("\">Yeni şifre talebi için tıklayınız...</a></strong><br><br><span style=\"font-size:12px;\">NOT : Eğer ki bu talep tarafınızca gerçekleştirilmemişse lütfen bu maili ciddiye almayınız.</span><br>Saygılarımızla...<br><br><br>NG - Mini|E-Ticaret");
+            mail.AppendLine("\">Yeni şifre telebi uçun tıklayın...</a></strong><br><br><span style=\"font-size:12px;\">NOT : Eger ki bu teleb siz terefden gerçekleştirilmemişse zehmet olmasa bu maili ciddiye almayın.</span><br>Saygılarımızla...<br><br><br>NG - Mini|E-Ticaret");
 
-            await SendMailAsync(to, "Şifre Yenileme Talebi", mail.ToString());
+            await SendMailAsync(to, "Password Generate", mail.ToString());
         }
 
         public async Task SendCompletedOrderMailAsync(string to, string orderCode, DateTime orderDate, string userName)
         {
-            string mail = $"Sayın {userName} Merhaba<br>" +
-                $"{orderDate} tarihinde vermiş olduğunuz {orderCode} kodlu siparişiniz tamamlanmış ve kargo firmasına verilmiştir.<br>Hayrını görünüz efendim...";
+            string mail = $"Sayın {userName} Salam<br>" +
+                $"{orderDate} tarixinde vermiş olduğunuz {orderCode} kodlu sifarişiniz tamamlanmış ve kargo firmasına verilmişdir.<br>Xeyirli olsun";
 
-            await SendMailAsync(to, $"{orderCode} Sipariş Numaralı Siparişiniz Tamamlandı", mail);
+            await SendMailAsync(to, $"{orderCode} sifariş nomrelı sifarişiniz tamamlandı", mail);
 
         }
 
